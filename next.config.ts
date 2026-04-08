@@ -7,6 +7,7 @@ const cspHeader = `
   img-src 'self' blob: data: https:;
   font-src 'self' data:;
   connect-src 'self' https://us.i.posthog.com https://us-assets.i.posthog.com;
+  frame-src 'self' https://www.youtube-nocookie.com;
   frame-ancestors 'none';
   form-action 'self';
   base-uri 'self';
