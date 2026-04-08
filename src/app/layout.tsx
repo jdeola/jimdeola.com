@@ -3,6 +3,8 @@ import { Inter } from 'next/font/google';
 import localFont from 'next/font/local';
 import { SITE_CONFIG } from '@/lib/constants';
 import { Header } from '@/components/layout/Header';
+import { Footer } from '@/components/layout/Footer';
+import { ScrollToTop } from '@/components/ui/ScrollToTop';
 import '@/styles/globals.css';
 
 const inter = Inter({
@@ -71,6 +73,8 @@ export default function RootLayout({
         </a>
         <Header />
         <main id="main-content">{children}</main>
+        <Footer />
+        <ScrollToTop />
       </body>
     </html>
   );
