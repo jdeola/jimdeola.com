@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import localFont from 'next/font/local';
 import { SITE_CONFIG } from '@/lib/constants';
+import { Header } from '@/components/layout/Header';
 import '@/styles/globals.css';
 
 const inter = Inter({
@@ -68,6 +69,7 @@ export default function RootLayout({
         >
           Skip to content
         </a>
+        <Header />
         <main id="main-content">{children}</main>
       </body>
     </html>
