@@ -18,6 +18,23 @@
   --font-mono: var(--font-jetbrains-mono), ui-monospace, monospace;
 }
 
+@keyframes hero-glow {
+  0% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1.15);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-glow-animated {
+    animation: none !important;
+  }
+}
+
 @layer base {
   body {
     background-color: var(--color-bg-primary);

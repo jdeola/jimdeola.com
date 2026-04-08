@@ -29,3 +29,5 @@ coverage/
 .cache/
 tmp/
 .vercel/
+.claude/
+.claude/
