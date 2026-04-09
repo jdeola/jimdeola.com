@@ -27,7 +27,7 @@ export type SocialLink = {
 
 export const PERSONAL_SOCIAL_LINKS: SocialLink[] = [
   { platform: 'LinkedIn', url: 'https://www.linkedin.com/in/jim-deola-jr/', icon: 'Linkedin' },
-  { platform: 'GitHub', url: 'https://github.com/jimdeola', icon: 'Github' },
+  { platform: 'GitHub', url: 'https://github.com/jdeola', icon: 'Github' },
   { platform: 'Instagram', url: 'https://www.instagram.com/ames_dean', icon: 'Instagram' },
   { platform: 'X', url: 'https://x.com/ames_deann', icon: 'Twitter' },
   { platform: 'Facebook', url: 'https://www.facebook.com/jim.deola.22', icon: 'Facebook' },
@@ -44,7 +44,7 @@ export const BUSINESSES = [
     gradient: 'from-accent to-accent-secondary',
     socials: [
       { platform: 'LinkedIn', url: 'https://www.linkedin.com/company/rhize-media/', icon: 'Linkedin' },
-      { platform: 'GitHub', url: 'https://github.com/rhize-inc', icon: 'Github' },
+      { platform: 'GitHub', url: 'https://github.com/Rhize-Media', icon: 'Github' },
       { platform: 'Instagram', url: 'https://www.instagram.com/rhizemedia', icon: 'Instagram' },
     ] as SocialLink[],
   },
