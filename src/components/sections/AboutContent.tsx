@@ -17,7 +17,7 @@ const KEY_FACTS = [
   {
     icon: Crosshair,
     label: 'Focus',
-    value: 'Full-Stack Dev, AI Engineering, SEO Strategy, Fitness Coaching',
+    value: 'Full-Stack Dev, AI Engineering, SEO/AEO Strategy, Fitness Coaching',
   },
   {
     icon: Wrench,
@@ -42,14 +42,23 @@ export function AboutContent() {
             <div className="space-y-5 text-lg leading-relaxed text-text-secondary">
               <p>
                 Full-stack developer, AI engineer, and SEO strategist based in South
-                Jersey. I&apos;ve spent 15+ years in healthcare data and operations
-                &mdash; building systems, automating workflows, and leading
-                cross-functional teams. That experience turned into{' '}
-                <strong className="text-text-primary">Rhize Media</strong>, a
-                dev + SEO agency I founded to help brands build real digital
-                infrastructure. I also run{' '}
-                <strong className="text-text-primary">Freeform Nutrition</strong>, a
-                fitness coaching brand focused on sustainable results.
+                Jersey. I studied chemical engineering at Rutgers, along with finance,
+                exercise physiology, chemistry, and physics at Atlantic Cape Community
+                College, before shifting focus to data science and full-stack software
+                development in 2020. Before that, I spent 15+ years in healthcare data
+                and operations &mdash; building systems, automating workflows, and
+                leading cross-functional teams.
+              </p>
+
+              <p>
+                That experience led to{' '}
+                <strong className="text-text-primary">Rhize Media</strong>, an
+                AI-native solutions company focused on web development, internal
+                tooling, digital marketing, advertising, and SEO/AEO strategy. I also
+                run{' '}
+                <strong className="text-text-primary">Freeform Nutrition</strong>,
+                where I apply evidence-based coaching to competitors, general weight
+                loss clients, MMA fighters, and powerlifters.
               </p>
 
               <p>
@@ -71,11 +80,11 @@ export function AboutContent() {
 
             <div className="space-y-4 text-lg leading-relaxed text-text-secondary">
               <p>
-                I was raised by a self-taught mechanical engineer, inventor, and
-                entrepreneur. My father built things with his hands his entire life
-                &mdash; that influence runs deep. I carry forward the same mindset in
-                everything I ship, even if my materials are data and code instead of
-                steel and circuits.
+                My father was a mechanical engineer, inventor, and entrepreneur
+                &mdash; a Drexel grad who finished sixth in his class. He built things
+                with his hands his entire life, and that influence runs deep. I carry
+                forward the same mindset in everything I ship, even if my materials
+                are data and code instead of steel and circuits.
               </p>
 
               <p>
@@ -96,11 +105,10 @@ export function AboutContent() {
 
             <div className="space-y-4 text-lg leading-relaxed text-text-secondary">
               <p>
-                Outside of work, I&apos;m into strength training, biohacking,
-                nutrition science, and trying to be a good dad. The same principles
-                apply across all of it &mdash; progressive overload, consistent
-                tracking, minimum effective dose. No shortcuts, just measurable inputs
-                and honest assessment of outputs.
+                Outside of work, I&apos;m into strength training, biohacking, and
+                nutrition science. The same principles apply across all of it &mdash;
+                progressive overload, consistent tracking, minimum effective dose. No
+                shortcuts, just measurable inputs and honest assessment of outputs.
               </p>
             </div>
           </AnimatedSection>
