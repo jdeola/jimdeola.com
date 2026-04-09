@@ -5,6 +5,7 @@ import { SITE_CONFIG } from '@/lib/constants';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
 import { ScrollToTop } from '@/components/ui/ScrollToTop';
+import { PostHogProvider } from '@/components/providers/PostHogProvider';
 import '@/styles/globals.css';
 
 const inter = Inter({
@@ -71,10 +72,12 @@ export default function RootLayout({
         >
           Skip to content
         </a>
-        <Header />
-        <main id="main-content">{children}</main>
-        <Footer />
-        <ScrollToTop />
+        <PostHogProvider>
+          <Header />
+          <main id="main-content">{children}</main>
+          <Footer />
+          <ScrollToTop />
+        </PostHogProvider>
       </body>
     </html>
   );
