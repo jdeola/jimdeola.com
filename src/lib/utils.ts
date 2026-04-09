@@ -6,7 +6,8 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 export function formatDate(date: string): string {
-  return new Date(date).toLocaleDateString('en-US', {
+  const [year, month, day] = date.split('-').map(Number)
+  return new Date(year, month - 1, day).toLocaleDateString('en-US', {
     month: 'long',
     day: '2-digit',
     year: 'numeric',
