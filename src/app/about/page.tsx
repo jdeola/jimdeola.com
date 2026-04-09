@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { AboutContent } from '@/components/sections/AboutContent';
+import { PersonJsonLd } from '@/components/seo/JsonLd';
 
 export const metadata: Metadata = {
   title: 'About',
@@ -14,5 +15,10 @@ export const metadata: Metadata = {
 };
 
 export default function AboutPage() {
-  return <AboutContent />;
+  return (
+    <>
+      <PersonJsonLd />
+      <AboutContent />
+    </>
+  );
 }

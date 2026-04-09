@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { getAllPosts, getPostBySlug } from '@/lib/blog';
 import { formatDate } from '@/lib/utils';
+import { BlogPostingJsonLd } from '@/components/seo/JsonLd';
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -52,6 +53,7 @@ export default async function BlogPostPage({ params }: Props) {
 
   return (
     <article className="mx-auto max-w-3xl px-4 py-16 sm:px-6 lg:px-8">
+      <BlogPostingJsonLd post={post} />
       {/* Category badge */}
       <div className="mb-6">
         <span className="inline-block rounded-full bg-accent/10 px-3 py-1 text-sm font-medium text-accent">
