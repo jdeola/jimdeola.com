@@ -16,6 +16,8 @@ Thumbs.db
 !.env.example
 node_modules/
 .next/
+*.tsbuildinfo
+next-env.d.ts
 dist/
 build/
 __pycache__/
