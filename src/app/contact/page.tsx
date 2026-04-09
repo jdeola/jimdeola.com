@@ -3,6 +3,7 @@ import { Mail, MapPin } from 'lucide-react';
 import { SITE_CONFIG } from '@/lib/constants';
 import { SocialLinks } from '@/components/ui/SocialLinks';
 import { AnimatedSection } from '@/components/ui/AnimatedSection';
+import { ContactForm } from '@/components/sections/ContactForm';
 
 export const metadata: Metadata = {
   title: 'Contact',
@@ -86,21 +87,9 @@ export default function ContactPage() {
           </div>
         </AnimatedSection>
 
-        {/* Contact Form Placeholder */}
+        {/* Contact Form */}
         <AnimatedSection>
-          {/* ContactForm component — built in S05-T01 */}
-          <div className="flex min-h-[400px] flex-col items-center justify-center rounded-xl border border-border p-8 text-center">
-            <div className="flex h-12 w-12 items-center justify-center rounded-full bg-accent/10 text-accent">
-              <Mail className="h-6 w-6" />
-            </div>
-            <h3 className="mt-4 text-lg font-semibold text-text-primary">
-              Contact Form
-            </h3>
-            <p className="mt-2 max-w-xs text-sm text-text-secondary">
-              A contact form is on the way. In the meantime, feel free to reach
-              out via email or social media.
-            </p>
-          </div>
+          <ContactForm />
         </AnimatedSection>
       </div>
     </section>
