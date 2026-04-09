@@ -12,7 +12,7 @@ const KEY_FACTS = [
   {
     icon: Building2,
     label: 'Companies',
-    value: 'Rhize Media, Freeform Fitness',
+    value: 'Rhize Media, Freeform Nutrition',
   },
   {
     icon: Crosshair,
@@ -22,7 +22,7 @@ const KEY_FACTS = [
   {
     icon: Wrench,
     label: 'Currently Building',
-    value: 'jimdeola.com',
+    value: 'AI agents, client systems, open-source tools',
   },
 ] as const;
 
@@ -41,82 +41,66 @@ export function AboutContent() {
 
             <div className="space-y-5 text-lg leading-relaxed text-text-secondary">
               <p>
-                I&apos;m a full-stack developer and AI engineer who builds things that
-                work. Not &ldquo;works in staging&rdquo; &mdash; actually works, at
-                scale, under real conditions. I run{' '}
-                <strong className="text-text-primary">Rhize Media</strong>, a web
-                development and AI agency, and{' '}
-                <strong className="text-text-primary">Freeform Fitness</strong>, a
-                personal training business. Both are based in South Jersey.
+                Full-stack developer, AI engineer, and SEO strategist based in South
+                Jersey. I&apos;ve spent 15+ years in healthcare data and operations
+                &mdash; building systems, automating workflows, and leading
+                cross-functional teams. That experience turned into{' '}
+                <strong className="text-text-primary">Rhize Media</strong>, a
+                dev + SEO agency I founded to help brands build real digital
+                infrastructure. I also run{' '}
+                <strong className="text-text-primary">Freeform Nutrition</strong>, a
+                fitness coaching brand focused on sustainable results.
               </p>
 
               <p>
-                My stack centers on TypeScript, Next.js, and React on the frontend,
-                with Python and Node.js powering backend services and AI integrations.
-                I&apos;ve spent years in SEO strategy &mdash; not the
-                &ldquo;keyword stuffing&rdquo; kind, but the technical, structured-data,
-                site-architecture kind that actually moves the needle. Most of my
-                work lives at the intersection of engineering and growth.
-              </p>
-
-              <p>
-                When I&apos;m not writing code, I&apos;m coaching clients through
-                strength training programs or experimenting with biohacking protocols.
-                Fitness isn&apos;t a side hobby &mdash; it&apos;s a discipline I take as
-                seriously as shipping production code.
+                My stack centers on Next.js, TypeScript, and Python, with deep
+                investment in AI tooling &mdash; Claude, PostHog, custom agents. I&apos;m
+                always building, whether it&apos;s client projects, open-source tools,
+                or my own products. SEO isn&apos;t a side skill for me; it&apos;s core
+                to how I think about product and distribution. The technical,
+                structured-data, site-architecture kind that actually moves the needle.
               </p>
             </div>
           </AnimatedSection>
 
-          {/* Section 2 — Jr. Distinction */}
+          {/* Section 2 — Builder roots */}
           <AnimatedSection className="mt-12">
             <h2 className="mb-4 text-2xl font-bold text-text-primary">
-              A Note on the Name
+              Builder by Nature
             </h2>
 
             <div className="space-y-4 text-lg leading-relaxed text-text-secondary">
               <p>
-                My full name is{' '}
-                <strong className="text-text-primary">James A. Deola Jr.</strong> If
-                you&apos;ve searched &ldquo;Jim Deola&rdquo; or &ldquo;James
-                Deola&rdquo; before, you may have seen results for my father,{' '}
-                <strong className="text-text-primary">James A. Deola Sr.</strong> He was
-                a mechanical engineer and inventor who passed away in 2024. He built
-                things with his hands his entire life &mdash; a trait I&apos;d like to
-                think carried over, even if my materials are pixels and data instead of
+                I was raised by a self-taught mechanical engineer, inventor, and
+                entrepreneur. My father built things with his hands his entire life
+                &mdash; that influence runs deep. I carry forward the same mindset in
+                everything I ship, even if my materials are data and code instead of
                 steel and circuits.
               </p>
 
               <p>
-                This site is mine &mdash; the tech founder, developer, and fitness coach.
-                If you&apos;re looking for information about my father&apos;s engineering
-                work, I&apos;m happy to point you in the right direction.
+                That means I default to building over theorizing. The best architecture
+                is the one that&apos;s live and serving users, not the one still being
+                debated in a design doc. I optimize for iteration speed, clean
+                abstractions, and code that the next person (often future me) can
+                actually read.
               </p>
             </div>
           </AnimatedSection>
 
-          {/* Section 4 — Philosophy */}
+          {/* Section 3 — Beyond code */}
           <AnimatedSection className="mt-12">
             <h2 className="mb-4 text-2xl font-bold text-text-primary">
-              How I Think About Building
+              Beyond the Code
             </h2>
 
             <div className="space-y-4 text-lg leading-relaxed text-text-secondary">
               <p>
-                I believe in shipping. Not recklessly &mdash; with craft, with
-                performance budgets, with tests &mdash; but shipping nonetheless. The
-                best architecture is the one that&apos;s live and serving users, not
-                the one that&apos;s still being debated in a design doc. I optimize for
-                iteration speed, clean abstractions, and code that the next person
-                (often future me) can actually read.
-              </p>
-
-              <p>
-                The same philosophy applies to fitness. Progressive overload,
-                consistent tracking, minimum effective dose. No magic supplements, no
-                shortcuts &mdash; just measurable inputs and honest assessment of
-                outputs. Whether I&apos;m tuning a Lighthouse score or a training
-                program, the method is the same: measure, adjust, repeat.
+                Outside of work, I&apos;m into strength training, biohacking,
+                nutrition science, and trying to be a good dad. The same principles
+                apply across all of it &mdash; progressive overload, consistent
+                tracking, minimum effective dose. No shortcuts, just measurable inputs
+                and honest assessment of outputs.
               </p>
             </div>
           </AnimatedSection>
