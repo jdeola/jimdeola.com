@@ -63,7 +63,7 @@ export function Header() {
           {/* Mobile hamburger button */}
           <button
             type="button"
-            className="inline-flex items-center justify-center rounded-md p-2 text-text-secondary transition-colors hover:text-text-primary md:hidden"
+            className="inline-flex items-center justify-center rounded-md p-2 text-text-secondary transition-colors hover:text-text-primary focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-bg-primary md:hidden"
             onClick={() => setIsMenuOpen(true)}
             aria-expanded={isMenuOpen}
             aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}

@@ -48,7 +48,7 @@ export function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={link.platform}
-                  className="text-text-secondary transition-colors hover:text-accent"
+                  className="rounded-md text-text-secondary transition-colors hover:text-accent focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-bg-secondary"
                 >
                   <Icon className="h-5 w-5" />
                 </a>

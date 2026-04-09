@@ -26,7 +26,7 @@ export function CopyButton({ code }: CopyButtonProps) {
       onClick={handleCopy}
       aria-label="Copy code"
       className={cn(
-        'rounded-md p-1.5 transition-colors',
+        'rounded-md p-1.5 transition-colors focus:outline-none focus:ring-2 focus:ring-accent',
         copied
           ? 'text-success'
           : 'text-text-secondary hover:text-text-primary hover:bg-bg-tertiary'

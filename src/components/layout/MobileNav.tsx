@@ -117,7 +117,7 @@ export function MobileNav({ isOpen, onClose }: MobileNavProps) {
             ref={closeButtonRef}
             type="button"
             onClick={onClose}
-            className="absolute top-4 right-4 rounded-md p-2 text-text-secondary transition-colors hover:text-text-primary"
+            className="absolute top-4 right-4 rounded-md p-2 text-text-secondary transition-colors hover:text-text-primary focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-bg-primary"
             aria-label="Close menu"
           >
             <X className="h-6 w-6" />

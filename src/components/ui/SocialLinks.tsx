@@ -27,7 +27,7 @@ export function SocialLinks({ className }: SocialLinksProps) {
             target="_blank"
             rel="noopener noreferrer"
             aria-label={link.platform}
-            className="flex h-9 w-9 items-center justify-center rounded-lg text-text-secondary transition-colors hover:bg-white/5 hover:text-text-primary"
+            className="flex h-9 w-9 items-center justify-center rounded-lg text-text-secondary transition-colors hover:bg-white/5 hover:text-text-primary focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-bg-primary"
           >
             <Icon className="h-5 w-5" />
           </a>

@@ -194,10 +194,12 @@ export function ContactForm() {
                 onBlur={handleBlur('name')}
                 disabled={status === 'submitting'}
                 placeholder="Your name"
+                aria-describedby={errors.name && touched.name ? 'contact-name-error' : undefined}
+                aria-invalid={errors.name && touched.name ? true : undefined}
                 className={cn(inputClasses, errors.name && touched.name && 'border-error focus:ring-error/30')}
               />
               {errors.name && touched.name && (
-                <p className="mt-1 text-xs text-error">{errors.name}</p>
+                <p id="contact-name-error" role="alert" className="mt-1 text-xs text-error">{errors.name}</p>
               )}
             </div>
 
@@ -215,10 +217,12 @@ export function ContactForm() {
                 onBlur={handleBlur('email')}
                 disabled={status === 'submitting'}
                 placeholder="you@example.com"
+                aria-describedby={errors.email && touched.email ? 'contact-email-error' : undefined}
+                aria-invalid={errors.email && touched.email ? true : undefined}
                 className={cn(inputClasses, errors.email && touched.email && 'border-error focus:ring-error/30')}
               />
               {errors.email && touched.email && (
-                <p className="mt-1 text-xs text-error">{errors.email}</p>
+                <p id="contact-email-error" role="alert" className="mt-1 text-xs text-error">{errors.email}</p>
               )}
             </div>
 
@@ -234,6 +238,8 @@ export function ContactForm() {
                 onChange={handleChange('subject')}
                 onBlur={handleBlur('subject')}
                 disabled={status === 'submitting'}
+                aria-describedby={errors.subject && touched.subject ? 'contact-subject-error' : undefined}
+                aria-invalid={errors.subject && touched.subject ? true : undefined}
                 className={cn(
                   inputClasses,
                   'appearance-none bg-[url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%23A1A1AA%22%20stroke-width%3D%222%22%3E%3Cpolyline%20points%3D%226%209%2012%2015%2018%209%22%2F%3E%3C%2Fsvg%3E")] bg-[length:1.25rem] bg-[right_0.75rem_center] bg-no-repeat pr-10',
@@ -251,7 +257,7 @@ export function ContactForm() {
                 ))}
               </select>
               {errors.subject && touched.subject && (
-                <p className="mt-1 text-xs text-error">{errors.subject}</p>
+                <p id="contact-subject-error" role="alert" className="mt-1 text-xs text-error">{errors.subject}</p>
               )}
             </div>
 
@@ -269,10 +275,12 @@ export function ContactForm() {
                 onBlur={handleBlur('message')}
                 disabled={status === 'submitting'}
                 placeholder="Your message (at least 10 characters)"
+                aria-describedby={errors.message && touched.message ? 'contact-message-error' : undefined}
+                aria-invalid={errors.message && touched.message ? true : undefined}
                 className={cn(inputClasses, 'resize-y', errors.message && touched.message && 'border-error focus:ring-error/30')}
               />
               {errors.message && touched.message && (
-                <p className="mt-1 text-xs text-error">{errors.message}</p>
+                <p id="contact-message-error" role="alert" className="mt-1 text-xs text-error">{errors.message}</p>
               )}
             </div>
 
@@ -295,14 +303,14 @@ export function ContactForm() {
 
             {/* Error message */}
             {status === 'error' && errorMessage && (
-              <div className="flex items-start gap-3 rounded-lg border border-error/20 bg-error/5 p-4">
-                <AlertCircle className="mt-0.5 h-5 w-5 shrink-0 text-error" />
+              <div role="alert" className="flex items-start gap-3 rounded-lg border border-error/20 bg-error/5 p-4">
+                <AlertCircle className="mt-0.5 h-5 w-5 shrink-0 text-error" aria-hidden="true" />
                 <div className="flex-1">
                   <p className="text-sm text-error">{errorMessage}</p>
                   <button
                     type="button"
                     onClick={handleRetry}
-                    className="mt-1 text-sm font-medium text-error underline underline-offset-2 transition-colors hover:text-error/80"
+                    className="mt-1 rounded text-sm font-medium text-error underline underline-offset-2 transition-colors hover:text-error/80 focus:outline-none focus:ring-2 focus:ring-error"
                   >
                     Try again
                   </button>

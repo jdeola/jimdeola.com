@@ -30,7 +30,7 @@ export function TableOfContents({ headings }: TableOfContentsProps) {
       <button
         type="button"
         onClick={() => setIsOpen(!isOpen)}
-        className="flex w-full items-center justify-between text-sm font-medium text-text-primary md:hidden"
+        className="flex w-full items-center justify-between rounded-md text-sm font-medium text-text-primary focus:outline-none focus:ring-2 focus:ring-accent md:hidden"
         aria-expanded={isOpen}
       >
         <span className="flex items-center gap-2">

@@ -32,10 +32,10 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <main>
+    <>
       <PersonJsonLd />
       <WebSiteJsonLd />
       <Hero />
-    </main>
+    </>
   );
 }
