@@ -1,4 +1,4 @@
-import { SITE_CONFIG, SOCIAL_LINKS } from '@/lib/constants';
+import { SITE_CONFIG, ALL_SOCIAL_LINKS } from '@/lib/constants';
 import type { BlogPost } from '@/types/blog';
 
 export function PersonJsonLd() {
@@ -20,7 +20,7 @@ export function PersonJsonLd() {
       'Founder',
     ],
     url: SITE_CONFIG.url,
-    sameAs: SOCIAL_LINKS.map((link) => link.url),
+    sameAs: ALL_SOCIAL_LINKS.map((link) => link.url),
     worksFor: [
       {
         '@type': 'Organization',
@@ -29,7 +29,7 @@ export function PersonJsonLd() {
       },
       {
         '@type': 'Organization',
-        name: 'Freeform Fitness',
+        name: 'Freeform Nutrition',
         url: 'https://freeformnutrition.net',
       },
     ],

@@ -4,15 +4,17 @@ import {
   Github,
   Instagram,
   Twitter,
+  Facebook,
   type LucideIcon,
 } from 'lucide-react';
-import { NAV_LINKS, SOCIAL_LINKS, SITE_CONFIG } from '@/lib/constants';
+import { NAV_LINKS, ALL_SOCIAL_LINKS, SITE_CONFIG } from '@/lib/constants';
 
 const ICON_MAP: Record<string, LucideIcon> = {
   Linkedin,
   Github,
   Instagram,
   Twitter,
+  Facebook,
 };
 
 export function Footer() {
@@ -38,7 +40,7 @@ export function Footer() {
 
           {/* Social Links */}
           <div className="flex items-center gap-4">
-            {SOCIAL_LINKS.map((link) => {
+            {ALL_SOCIAL_LINKS.map((link) => {
               const Icon = ICON_MAP[link.icon];
               if (!Icon) return null;
               return (

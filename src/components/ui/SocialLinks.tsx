@@ -1,22 +1,24 @@
-import { Github, Linkedin, Instagram, Twitter, type LucideIcon } from 'lucide-react';
+import { Github, Linkedin, Instagram, Twitter, Facebook, type LucideIcon } from 'lucide-react';
 import { cn } from '@/lib/utils';
-import { SOCIAL_LINKS } from '@/lib/constants';
+import { PERSONAL_SOCIAL_LINKS, type SocialLink } from '@/lib/constants';
 
 const iconMap: Record<string, LucideIcon> = {
   Github,
   Linkedin,
   Instagram,
   Twitter,
+  Facebook,
 };
 
 interface SocialLinksProps {
+  links?: SocialLink[];
   className?: string;
 }
 
-export function SocialLinks({ className }: SocialLinksProps) {
+export function SocialLinks({ links = PERSONAL_SOCIAL_LINKS, className }: SocialLinksProps) {
   return (
     <div className={cn('flex items-center gap-3', className)}>
-      {SOCIAL_LINKS.map((link) => {
+      {links.map((link) => {
         const Icon = iconMap[link.icon];
         if (!Icon) return null;
 
