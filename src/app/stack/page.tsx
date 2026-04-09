@@ -1,15 +1,29 @@
 import type { Metadata } from 'next';
+import { SITE_CONFIG } from '@/lib/constants';
 import { TechStack } from '@/components/sections/TechStack';
 
 export const metadata: Metadata = {
   title: 'Stack',
   description:
     "Jim Deola's tech stack — the tools, frameworks, and technologies powering modern web applications and AI solutions.",
+  alternates: {
+    canonical: `${SITE_CONFIG.url}/stack`,
+  },
   openGraph: {
     title: 'Stack | Jim Deola',
     description:
       "Jim Deola's tech stack — the tools, frameworks, and technologies powering modern web applications and AI solutions.",
-    url: 'https://jimdeola.com/stack',
+    url: `${SITE_CONFIG.url}/stack`,
+    siteName: SITE_CONFIG.name,
+    type: 'website',
+    images: ['/images/og-default.png'],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Stack | Jim Deola',
+    description:
+      "Jim Deola's tech stack — the tools, frameworks, and technologies powering modern web applications and AI solutions.",
+    images: ['/images/og-default.png'],
   },
 };
 

@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { SITE_CONFIG } from '@/lib/constants';
 import { getAllPosts } from '@/lib/blog';
 import { PostGrid } from '@/components/blog/PostGrid';
 
@@ -6,12 +7,24 @@ export const metadata: Metadata = {
   title: 'Blog',
   description:
     'Articles by Jim Deola on full-stack development, AI engineering, SEO strategy, fitness, and building businesses.',
+  alternates: {
+    canonical: `${SITE_CONFIG.url}/blog`,
+  },
   openGraph: {
     title: 'Blog | Jim Deola',
     description:
       'Articles by Jim Deola on full-stack development, AI engineering, SEO strategy, fitness, and building businesses.',
-    url: 'https://jimdeola.com/blog',
+    url: `${SITE_CONFIG.url}/blog`,
+    siteName: SITE_CONFIG.name,
     type: 'website',
+    images: ['/images/og-default.png'],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Blog | Jim Deola',
+    description:
+      'Articles by Jim Deola on full-stack development, AI engineering, SEO strategy, fitness, and building businesses.',
+    images: ['/images/og-default.png'],
   },
 };
 

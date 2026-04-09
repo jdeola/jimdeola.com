@@ -26,10 +26,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: post.title,
     description: post.description,
+    alternates: {
+      canonical: `https://jimdeola.com/blog/${post.slug}`,
+    },
     openGraph: {
       title: post.title,
       description: post.description,
       url: `https://jimdeola.com/blog/${post.slug}`,
+      siteName: 'Jim Deola',
       type: 'article',
       images: [
         `/api/og?title=${encodeURIComponent(post.title)}&category=${encodeURIComponent(post.category)}`,
@@ -37,6 +41,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     },
     twitter: {
       card: 'summary_large_image',
+      title: post.title,
+      description: post.description,
+      images: [
+        `/api/og?title=${encodeURIComponent(post.title)}&category=${encodeURIComponent(post.category)}`,
+      ],
     },
   };
 }

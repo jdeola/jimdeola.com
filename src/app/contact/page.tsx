@@ -9,11 +9,24 @@ export const metadata: Metadata = {
   title: 'Contact',
   description:
     'Get in touch with Jim Deola — full-stack developer, AI engineer, and founder. Reach out for web development, AI projects, or fitness coaching.',
+  alternates: {
+    canonical: `${SITE_CONFIG.url}/contact`,
+  },
   openGraph: {
     title: 'Contact | Jim Deola',
     description:
       'Get in touch with Jim Deola — full-stack developer, AI engineer, and founder. Reach out for web development, AI projects, or fitness coaching.',
     url: `${SITE_CONFIG.url}/contact`,
+    siteName: SITE_CONFIG.name,
+    type: 'website',
+    images: ['/images/og-default.png'],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Contact | Jim Deola',
+    description:
+      'Get in touch with Jim Deola — full-stack developer, AI engineer, and founder. Reach out for web development, AI projects, or fitness coaching.',
+    images: ['/images/og-default.png'],
   },
 };
 
